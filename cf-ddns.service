@@ -1,0 +1,10 @@
+[Unit]
+Description=Cloudflare DNS DDNS Update Service
+
+[Service]
+Type=oneshot
+User=labban
+WorkingDirectory=/home/labban/dns-ip-update
+ExecStart=/home/labban/dns-ip-update/cf_update_dns.sh
+StandardOutput=append:/home/labban/dns-ip-update/logs/cf_ddns.log
+StandardError=append:/home/labban/dns-ip-update/logs/cf_ddns.log
