@@ -1,5 +1,6 @@
 # Cloudflare DNS Update Script
 
+
 A bash script to update a single DNS record on Cloudflare (DDNS - Dynamic DNS).
 
 ## Prerequisites
